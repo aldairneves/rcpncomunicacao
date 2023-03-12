@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,35 +8,47 @@
     <link rel="stylesheet" href="casamento.css">
     <title>ETIQUETA - CASAMENTO</title>
 </head>
+
 <body>
     <h1>COMUNICAÇÃO DE CASAMENTO</h1>
 
     <div class="preencher">
 
-        <input id='data' type='date' class='data'value='' onkeyup="insere()"
-         placeholder="Data de hoje"/>
-        
-        <input id='nomesNubentes' type='text' class='nomesNubentes'value='' onkeyup="insere()"
-         placeholder="Nomes dos Nubentes"/>
-        
-         <input id='livroNumero' type='text' class='livroNumero'value='' onkeyup="insere()" 
-         placeholder="Livro, Folha e Termo:"/>
+        <input id='data' type='date' class='data' value='' onkeyup="insere()" placeholder="Data de hoje" />
 
-         <input id='dataRegistro' type='text' class='dataRegistro'value='' onkeyup="insere()"
-         placeholder="Data do Registro"/>
+        <input id='nomesNubentes' type='text' class='nomesNubentes' value='' onkeyup="insere()"
+            placeholder="Nomes dos Nubentes" />
 
-         <input id='serventia' type='text' class='serventia'value='' onkeyup="insere()" 
-         placeholder="Serventia de Registro"/>
+        <input id='livroNumero' type='text' class='livroNumero' value='' onkeyup="insere()"
+            placeholder="Livro, Folha e Termo:" />
+
+        <input id='dataRegistro' type='text' class='dataRegistro' value='' onkeyup="insere()"
+            placeholder="Data do Registro" />
+
+        <input id='serventia' type='text' class='serventia' value='' onkeyup="insere()"
+            placeholder="Serventia de Registro" />
     </div>
-    <div id="imprimir"></div>
+    <div id="imprimir">
         <div class="textocomunicacao">
-            <p class="texto">Aos <span id="grat"></span>, <strong>procedo anotação do óbito de</strong> <span id="nomes"></span>,
-            registrado no <span id="gra"></span>, em <span id="grati"></span>, <span id="servi"></span>. </p>
+            <p class="texto">Aos <span id="grat"></span>, <strong>procedo anotação do óbito de</strong> <span
+                 id="nomes"></span>,
+                registrado no <span id="gra"></span>, em <span id="grati"></span>, <span id="servi"></span>. </p>
+    </div>
         </div>
-    </div> 
-    <div class="btn">
+    <div id="btn" class="btn">
         <button class="botao">IMPRIMIR ETIQUETA</button>
     </div>
-    
+
+<script type="text/javascript">
+
+    document.getElementById('btn').onclick = function () {
+        var conteudo = document.getElementById('imprimir').innerHTML,
+            tela_impressao = window.open('about:blank');
+
+        tela_impressao.document.write(conteudo);
+        tela_impressao.window.print();
+        tela_impressao.window.close();
+    };
+</script>
 </body>
 </html>
