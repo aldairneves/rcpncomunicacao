@@ -9,7 +9,7 @@
     width: 100vw;
     background: linear-gradient(190deg, #0A162D, #1C3057, #0A162D);
     background-size: 300% 300%;
-    animation: colors 10s ease infinite;
+    animation: colors 50s ease infinite;
   }
     
     @keyframes colors {
