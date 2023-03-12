@@ -19,20 +19,23 @@
         <input id='nomesNubentes' type='text' class='nomesNubentes' value='' onkeyup="insere()"
             placeholder="Nomes dos Nubentes" />
 
-        <input id='livroNumero' type='text' class='livroNumero' value='' onkeyup="insere()"
-            placeholder="Livro, Folha e Termo:" />
-
-        <input id='dataRegistro' type='text' class='dataRegistro' value='' onkeyup="insere()"
+        <input id='dataRegistro' type='date' class='dataRegistro' value='' onkeyup="insere()"
             placeholder="Data do Registro" />
+
+        <input id='numeroLivro' type='text' class='livroNumero' value='' onkeyup="insere()"
+            placeholder="Livro, Folha e Termo:" />
 
         <input id='serventia' type='text' class='serventia' value='' onkeyup="insere()"
             placeholder="Serventia de Registro" />
+
+        <input id='nomeAlterado' type='text' class='nomeAlterado' value='' onkeyup="insere()"
+            placeholder="Nome Alterado" />
+
     </div>
     <div id="imprimir">
         <div class="textocomunicacao">
-            <p class="texto">Aos <span id="grat"></span>, <strong>procedo anotação do óbito de</strong> <span
-                 id="nomes"></span>,
-                registrado no <span id="gra"></span>, em <span id="grati"></span>, <span id="servi"></span>. </p>
+            <p class="texto">Aos <span id="dataHoje"></span><strong>, procedo à anotação do casamento de </strong> <span
+                id="nomes"></span>, registrado em <span id="dateManual"></span> no <span id="numerosLFT"> </span>, <span id="cartorio"> </span>. <span id="nomeAl"></span>. </p>
     </div>
         </div>
     <div class="btn">
