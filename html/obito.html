@@ -4,11 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/rcpncomunicacao/style/padrao.css">
     <link rel="stylesheet" href="/rcpncomunicacao/style/obito.css">
     <title>ETIQUETA - ÓBITO</title>
 </head>
 <body>
     <h1>COMUNICAÇÃO DE ÓBITO</h1>
-    
+    <div class="preencher">
+
+        <input id='data' type='date' class='data' value='' onkeyup="insere()" placeholder="Data de hoje" />
+
+        <input id='nomesNubentes' type='text' class='nomesNubentes' value='' onkeyup="insere()"
+            placeholder="Nomes dos Nubentes" />
+
+        <input id='dataRegistro' type='date' class='dataRegistro' value='' onkeyup="insere()"
+            placeholder="Data do Registro" />
+
+        <input id='numeroLivro' type='text' class='livroNumero' value='' onkeyup="insere()"
+            placeholder="Livro, Folha e Termo:" />
+
+        <input id='serventia' type='text' class='serventia' value='' onkeyup="insere()"
+            placeholder="Serventia de Registro" />
+
+        <input id='nomeAlterado' type='text' class='nomeAlterado' value='' onkeyup="insere()"
+            placeholder="Nome Alterado" />
+
+    </div>
+    <div id="imprimir">
+        <div class="textocomunicacao">
+            <p class="texto">Aos <span id="dataHoje"></span><strong>, procedo à anotação do casamento de </strong> <span
+                id="nomes"></span>, registrado em <span id="dateManual"></span> no <span id="numerosLFT"> </span>, <span id="cartorio"> </span>. <span id="nomeAl"></span>. </p>
+    </div>
+        </div>
+    <div class="btn">
+        <button id="btn" class="botao">IMPRIMIR ETIQUETA</button>
+    </div>
+    <script type="text/javascript" src="/rcpncomunicacao/js/imprimir.js"></script>
+    <script type="text/javascript" src="/rcpncomunicacao/js/obito.js"></script>
 </body>
 </html>
