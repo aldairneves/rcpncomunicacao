@@ -1,37 +1,151 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  body {
-    /*     display: flex; */
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(180deg, #0A162D, #1C3057, #0A162D);
-    background-size: 300% 300%;
-    animation: colors 50s ease infinite;
-  }
-    
-    @keyframes colors {
-      0% {
-        background-position: 0% 50%;
-      }
-    
-      50% {
-        background-position: 100% 50%;
-      }
-    
-      100% {
-        background-position: 0% 50%;
-      }
-    }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  h1{
-    font-size: 50px;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: white;
-    padding: 20px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+body {
+  /*     display: flex; */
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(180deg, #0A162D, #1C3057, #0A162D);
+  background-size: 300% 300%;
+  animation: colors 50s ease infinite;
+}
+
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
   }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: white;
+  padding: 10px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.preencher{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+
+.data {
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  margin: 5px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  border: 2px solid #a9a8ff;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.nomesNubentes {
+  width: 250px;
+  height: 40px;
+  text-align: center;
+  margin: 5px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  border: 2px solid #a9a8ff;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.livroNumero {
+  width: 180px;
+  height: 40px;
+  text-align: center;
+  margin: 5px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  border: 2px solid #a9a8ff;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.dataRegistro {
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  margin: 5px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  border: 2px solid #a9a8ff;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.serventia {
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  margin: 5px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  border: 2px solid #a9a8ff;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+.textocomunicacao{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+.texto{
+  width: 1200px;
+  height: 200px;
+  padding: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  border: 2px solid #a9a8ff;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  }
+.btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+.botao{
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  margin: 5px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  border: 2px solid #a9a8ff;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
