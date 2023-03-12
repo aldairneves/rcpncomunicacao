@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="casamento.css">
+    <link rel="stylesheet" href="/rcpncomunicacao/style/casamento.css">
     <title>ETIQUETA - CASAMENTO</title>
 </head>
 
@@ -35,20 +35,9 @@
                 registrado no <span id="gra"></span>, em <span id="grati"></span>, <span id="servi"></span>. </p>
     </div>
         </div>
-    <div id="btn" class="btn">
-        <button class="botao">IMPRIMIR ETIQUETA</button>
+    <div class="btn">
+        <button id="btn" class="botao">IMPRIMIR ETIQUETA</button>
     </div>
-
-<script type="text/javascript">
-
-    document.getElementById('btn').onclick = function () {
-        var conteudo = document.getElementById('imprimir').innerHTML,
-            tela_impressao = window.open('about:blank');
-
-        tela_impressao.document.write(conteudo);
-        tela_impressao.window.print();
-        tela_impressao.window.close();
-    };
-</script>
+    <script type="text/javascript" src="/rcpncomunicacao/js/imprimir.js"></script>
 </body>
 </html>
