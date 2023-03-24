@@ -14,12 +14,12 @@
     </div>
     <div class="preencher">
 
-        <input id='data' type='date' class='data' value='' onkeyup="insere()" placeholder="Data de hoje" />
+        <input id='data' type='text' class='data' value='' onkeyup="insere()" placeholder="Data de hoje" />
 
-        <input id='nomesNubentes' type='text' class='nomesNubentes' value='' onkeyup="insere()"
-            placeholder="Nomes dos Nubentes" />
+        <input id='nomesFalec' type='text' class='nomesFalecido' value='' onkeyup="insere()"
+            placeholder="Nome do Falecido" />
 
-        <input id='dataRegistro' type='date' class='dataRegistro' value='' onkeyup="insere()"
+        <input id='dataRegistro' type='text' class='dataRegistro' value='' onkeyup="insere()"
             placeholder="Data do Registro" />
 
         <input id='numeroLivro' type='text' class='livroNumero' value='' onkeyup="insere()"
@@ -28,17 +28,13 @@
         <input id='serventia' type='text' class='serventia' value='' onkeyup="insere()"
             placeholder="Serventia de Registro" />
 
-        <input id='nomeAlterado' type='text' class='nomeAlterado' value='' onkeyup="insere()"
-            placeholder="Nome Alterado" />
-
     </div>
     <div id="imprimir">
         <div class="textocomunicacao">
-            <p class="texto">Aos <span id="dataHoje"></span><strong>, procedo à anotação do casamento de </strong> <span
-                id="nomes"></span>, registrado em <span id="dateManual"></span> no <span id="numerosLFT"> </span>, <span id="cartorio"> </span>. <span id="nomeAl"></span>. </p>
+            <p class="texto"><strong> Aos <span id="dataHoje"></span>, procedo à anotação do óbito de <span id="nomes"></span>, falecido em <span id="dateManual"></span>, registrado no <span id="numerosLFT"> </span> <span id="cartorio"></span></strong></p>.
     </div>
         </div>
-        <div class="dicas">Dicas: d = Desta Serventia
+        <div class="dicas">Dicas: s = desta serventia
         </div>
     <div class="btn">
         <button id="btn" class="botao">IMPRIMIR ETIQUETA</button>
