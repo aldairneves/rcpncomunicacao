@@ -26,10 +26,12 @@ function insere() {
     numerosLFT.innerHTML = numeroLivro;
 
     var serventia = serventi.value;
-    if (serventia == '') serventia = '';
+    if (serventia == 's') serventia = 'Desta Serventia';
+    if (serventia == 'si') serventia = 'sem informação';
     cartorio.innerHTML = serventia;
 
     var nomeAlterado = nubNomealt.value;
-    if (nomeAlterado == '') nomeAlterado = '';
+    if (nomeAlterado == 'n') nomeAlterado = 'Não ouvi alteração de nomes';
+    if (nomeAlterado == 'si') nomeAlterado = 'sem informação';
     nomeAl.innerHTML = nomeAlterado;
 }
