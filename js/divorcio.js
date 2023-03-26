@@ -27,9 +27,11 @@ function insere() {
 
     var serventia = serventi.value;
     if (serventia == '') serventia = '';
+    if (serventia == 's') serventia = ', nesta serventia';
     cartorio.innerHTML = serventia;
 
     var nomeAlterado = nubNomealt.value;
     if (nomeAlterado == '') nomeAlterado = '';
+    if (nomeAlterado == 'n') nomeAlterado = 'Não ouvi alteração de nomes';
     nomeAl.innerHTML = nomeAlterado;
 }
