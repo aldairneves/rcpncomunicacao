@@ -25,6 +25,6 @@ function insere() {
     numerosLFT.innerHTML = numeroLivro;
 
     var serventia = serventi.value;
-    if (serventia == 's') serventia = 'nesta serventia';
+    if (serventia == 's') serventia = ', nesta serventia';
     cartorio.innerHTML = serventia;
 }

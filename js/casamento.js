@@ -33,8 +33,9 @@ function insere() {
     numerosLFT.innerHTML = numeroLivro;
 
     var serventia = serventi.value;
-    if (serventia == 's') serventia = 'nesta serventia';
-    if (serventia == 'si') serventia = 'sem informação';
+    if (serventia == '') serventia = '';
+/*     if (serventia == 'si') serventia = 'sem informação'; */
+    if (serventia == 's') serventia = ', nesta serventia';
     cartorio.innerHTML = serventia;
 
     var nomeAlterado = nubNomealt.value;
