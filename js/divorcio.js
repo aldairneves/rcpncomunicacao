@@ -32,6 +32,6 @@ function insere() {
 
     var nomeAlterado = nubNomealt.value;
     if (nomeAlterado == '') nomeAlterado = '';
-    if (nomeAlterado == 'n') nomeAlterado = 'Não ouvi alteração de nomes';
+    if (nomeAlterado == 'n') nomeAlterado = 'Não houve alteração de nomes';
     nomeAl.innerHTML = nomeAlterado;
 }

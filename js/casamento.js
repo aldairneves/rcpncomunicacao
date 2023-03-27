@@ -39,7 +39,7 @@ function insere() {
     cartorio.innerHTML = serventia;
 
     var nomeAlterado = nubNomealt.value;
-    if (nomeAlterado == 'n') nomeAlterado = 'não ouvi alteração de nomes';
+    if (nomeAlterado == 'n') nomeAlterado = 'não houve alteração de nomes';
     if (nomeAlterado == 'si') nomeAlterado = 'sem informação';
     nomeAl.innerHTML = nomeAlterado;
 }
