@@ -14,7 +14,7 @@ btn_imp.addEventListener("click",(evt)=>{
     const conteudo = document.getElementById("imprimir").innerHTML
 
     let estilo = "<style>"
-    estilo += "p {text-align: justify; font-family: 'Roboto', sans-serif; font-size: 12px;}"
+    estilo += "p {border:none; text-align: justify; font-family: 'Roboto', sans-serif; font-size: 12px;}"
     estilo += "</style>"
 
     const win = window.open('about:blank');
