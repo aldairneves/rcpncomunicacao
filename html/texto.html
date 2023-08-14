@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/rcpncomunicacao/style/padrao.css">
+    <link rel="stylesheet" href="/rcpncomunicacao/style/texto.css">
+    <title>ETIQUETA EDITÁVEL</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1>ETIQUETA EDITÁVEL</h1>
+    </div>
+    <div class="preencher">
+
+        <label>Digite ou cole o texto aqui
+        <input id='data' type='text' class='data' value='' onkeyup="insere()" placeholder="">
+        </label>
+    </div>
+    <div id="imprimir">
+        <div class="textocomunicacao">
+            <p class="texto"><strong><span id="dataHoje"></span></p>
+    </div>
+        </div>
+    <div class="btn">
+        <button id="btn" class="botao">IMPRIMIR ETIQUETA</button>
+    </div>
+    <script type="text/javascript" src="/rcpncomunicacao/js/imprimir.js"></script>
+    <script type="text/javascript" src="/rcpncomunicacao/js/obito.js"></script>
+</body>
+</html>
